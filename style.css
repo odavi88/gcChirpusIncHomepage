@@ -1,17 +1,11 @@
+html {
+    font-family: "Open Sans", sans-serif;
+}
 body {
-    /* box size & border-box */
     position: relative;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #f9fafc;
 }
-/* .container {
-width; 90%;
-max-width 1200px;
-margin: 0 auto;
-padding 20px;
-}
-*/
 header {
     display: flex;
     flex-direction: column;
@@ -20,12 +14,19 @@ header {
 h3 {
     margin: 0;
 }
+p {
+    color: #69696a;
+    font-size: 14px;
+    border-left: solid 2.5px #69696a;
+    padding-left: 15px;
+    margin-left: 4px;
+}
 button {
     color: #fff;
     background-color: #000;
     border: #000;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 15px;
     height: 45px;
 }
 nav {
@@ -54,23 +55,20 @@ main {
 h1 {
     margin-bottom: 0;
 }
-p {
-    border-left: solid 2px #69696a;
-    padding-left: 12px;
-}
 footer {
-    position: relative;
-    background-color: rgb(247, 193, 162);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: dashed 4px red;
-    height: 40px;
+    position: fixed;
+    top: 680px;
+    background-color: rgb(247, 193, 162, 0.7);
+    height: 45px;
+    width: 100%;
     padding-left: 15px;
-    padding-right: 15px;
 }
 .footer-nav {
     display: flex;
     flex-direction: row;
+    padding-right: 25px;
     gap: 15px;
 }
