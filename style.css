@@ -10,7 +10,6 @@ header {
     display: flex;
     flex-direction: column;
     padding: 12px;
-    border: 2px solid rgb(132, 0, 255);
 }
 h3 {
     margin: 0;
@@ -51,12 +50,11 @@ main {
     display: flex;
     flex-direction: column;
     padding: 12px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .main-section-1 {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(162, 0, 255);
 }
 h1 {
     margin-bottom: 0;
@@ -81,63 +79,12 @@ footer {
 
 @media screen and (min-width: 768px) {
     header {
-        margin-bottom: 80px;
-    }
-    main {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 12px;
-        border: 2px solid rgb(255, 0, 0);
-    }
-     .main-section-1 {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        border: 2px solid rgb(0, 115, 255);
-    }
-    .main-section-2 {
-        display: flex;
-        flex
-        border: 2px solid rgb(0, 255, 21);
-        width: 50%;
-    }
-    .large-circle {
-        position: absolute;
-        left: 1100px;
-        bottom: 80px;
-        border-radius: 200px;
-        width: 200px;
-        height: 200px;
-        background-color: rgba(247, 136, 167, 0.6);
-    }
-    .medium-circle {
-        position: absolute;
-        left: 1215px;
-        bottom: 40px;
-        border-radius: 150px;
-        width: 150px;
-        height: 150px;
-        background-color: rgba(247, 193, 162, 0.7);
-    }
-    .small-circle {
-        position: absolute;
-        left: 1255px;
-        bottom: 150px;
-        border-radius: 90px;
-        width: 90px;
-        height: 90px;
-        background-color: rgba(207, 130, 213, 0.6);
-    }
-}
-/* @media screen and (min-width: 768px){
-    header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 12px;
+        margin-bottom: 80px;
     }
     nav {
         display: flex;
@@ -160,36 +107,50 @@ footer {
     main {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         padding: 12px;
-        border: 2px solid blue;
+        /* border: 2px solid rgb(255, 0, 0); */
     }
-   .main-section-1 {
-        border: 2px solid rgb(255, 0, 0);
-        flex-grow: 1;
+     .main-section-1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 2px solid rgb(0, 115, 255); */
     }
     .main-section-2 {
-        border: 2px solid rgb(4, 255, 0);
-        flex-grow: 2;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        /* border: 2px solid rgb(162, 0, 255); */
+        width: 50%;
     }
-    #call-to-action-button {
-
+    .circle {
+        position: absolute;
     }
     .large-circle {
-        border-radius: 200px;
-        width: 200px;
-        height: 200px;
+        position: absolute;
+        right: 75px;
+        border-radius: 220px;
+        width: 220px;
+        height: 220px;
         background-color: rgba(247, 136, 167, 0.6);
     }
     .medium-circle {
-        border-radius: 100px;
-        width: 100px;
-        height: 100px;
+        position: absolute;
+        top: 120px;
+        right: 10px;
+        border-radius: 175px;
+        width: 175px;
+        height: 175px;
         background-color: rgba(247, 193, 162, 0.7);
     }
     .small-circle {
-        border-radius: 80px;
-        width: 80px;
-        height: 80px;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        border-radius: 120px;
+        width: 120px;
+        height: 120px;
         background-color: rgba(207, 130, 213, 0.6);
     }
-} */
+}
